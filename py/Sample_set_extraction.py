@@ -4,8 +4,7 @@ from sklearn.decomposition import PCA
 from sklearn.utils import resample
 
 # Read dataset
-data = pd.read_csv('__STD_data.csv')
-
+data = pd.read_csv('STD_data.csv')
 sample_id_column = 'Sample'
 features = data.iloc[:, 1:]
 
@@ -46,4 +45,4 @@ output_columns = [sample_id_column] + list(features.columns)
 final_sample = final_sample[output_columns]
 
 # Save results
-final_sample.to_csv('Kmeans_STD_mod_200_layer_mod.csv', index=False)
+final_sample.to_csv('Sample_data.csv', index=False)
