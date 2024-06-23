@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 data = pd.read_csv("Origin_data.csv")
 
 # Select feature columns 
-feature_cols = data.columns[1:11]
+feature_cols = data.columns[1:15]
 
 # Standardize the features
 scaler = StandardScaler()

@@ -18,7 +18,7 @@ df_full_pca = pca.fit_transform(df_full)
 df_sample1_pca = pca.transform(df_sample1)
 
 # Create plot
-fig, axes = plt.subplots(figsize=(4, 3))
+fig, axes = plt.subplots(figsize=(12, 9))
 
 # Define list of sample datasets and their names
 sample_datasets = [df_sample1_pca]
