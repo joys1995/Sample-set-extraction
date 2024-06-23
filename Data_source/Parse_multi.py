@@ -6,7 +6,7 @@ columns = [
 ]
 
 # Read the CSV file
-df = pd.read_csv('Data_Ori_Full.csv')
+df = pd.read_csv('Electrolyte formulation_Full.csv')
 
 # Create a new DataFrame to store the transformed data
 new_df = pd.DataFrame(columns=columns)
