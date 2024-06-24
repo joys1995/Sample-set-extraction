@@ -25,7 +25,7 @@ stratified_sample = data.groupby(['PC1_quantile', 'PC2_quantile'], group_keys=Fa
 )
 
 # KMeans clustering with n_clusters set to the target small sample size
-final_sample_size = 200  # Desired final sample size
+final_sample_size = 250  # Desired final sample size
 kmeans = KMeans(n_clusters=final_sample_size, init='k-means++', random_state=42)
 kmeans.fit(stratified_sample[['PC1', 'PC2']])
 
